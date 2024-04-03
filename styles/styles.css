@@ -1,0 +1,91 @@
+/*shared styles*/
+@import url(https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap);
+*{
+  font-family: "Mulish", sans-serif;
+}
+.orng-txt{
+  color: rgb(255, 84, 0)
+}
+
+/* Title styles of Header */
+.title-logo{
+  display: flex;
+  align-items: center;
+  margin-left: 135px;
+}
+.title-logo img{
+  width: 48px;
+  height: 56.01px;
+
+}
+.title{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.title h3{
+  width: 500px;
+  height: 45px;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 10px;
+}
+nav{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 127px;
+  
+  
+}
+nav>ul{
+  display: flex;
+  gap: 30px;
+}
+nav li{
+  list-style-type: none;
+  gap: 10px;
+  
+  
+}
+nav li a{
+  text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-size: 1.125rem; 
+  font-weight: 700;
+  
+}
+.menu-icon{
+  display: none;
+}
+
+/*Responsive styles */
+@media screen and (max-width: 576px) {
+  header{
+    padding:20px;
+  }
+  nav{
+    display: none;
+  }
+  .title h3{
+    width: 120px;
+    height: 27px;
+  }
+  .menu-icon{
+    display: block;
+    text-decoration: none;
+  }
+  .menu-icon a{
+    text-decoration: none;
+    color: black;
+  }
+  .title-logo{
+    margin-left: 20px;
+  }
+}
+
+
